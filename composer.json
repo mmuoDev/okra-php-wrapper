@@ -2,7 +2,7 @@
     "name": "mmuodev/okra-php-wrapper",
     "type": "library",
     "description": "PHP Wrapper for Okra",
-    "keywords": ["financial data, fintech, Nigerian bank information"],
+    "keywords": ["financial data", "fintech", "Nigerian bank information"],
     "homepage": "https://mmuo.dev",
     "license": "MIT",
     "authors": [
