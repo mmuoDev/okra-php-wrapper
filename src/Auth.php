@@ -37,7 +37,7 @@ class Auth{
     }
 
     //return auth information for a cutomer using auth id
-    public function getIdentityById($id = null): array {
+    public function getAuthById($id = null): array {
         if(!is_null($id)){
             $body = ['id' => $id];
             $url = HOST_URL.AUTH_BY_ID;
