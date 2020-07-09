@@ -4,15 +4,14 @@
  * This allows you to retrieve various account holder information on file 
  * with the bank, including names, emails, phone numbers, and addresses
  */
-namespace OKRA_PHP_WRAPPER\src;
+namespace App;
 
+use App\Helper\UseGuzzle;
+use App\Helper\Utilities;
 use InvalidArgumentException;
-use OKRA_PHP_WRAPPER\src\Helper\UseGuzzle;
-use OKRA_PHP_WRAPPER\src\Helper\Utilities;
 
-require_once 'Helper/UseGuzzle.php';
-require_once 'endpoints.php';
-require_once 'Helper/Utilities.php';
+require_once 'constants.php';
+
 
 class Identity{
     const LIMIT = 10;

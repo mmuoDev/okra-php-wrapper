@@ -6,15 +6,11 @@
  * along with high-level account data and balances when available.
  */
 
-namespace OKRA_PHP_WRAPPER\src;
+namespace App;
 
+use App\Helper\UseGuzzle;
+use App\Helper\Utilities;
 use InvalidArgumentException;
-use OKRA_PHP_WRAPPER\src\Helper\UseGuzzle;
-use OKRA_PHP_WRAPPER\src\Helper\Utilities;
-
-require_once 'Helper/UseGuzzle.php';
-require_once 'endpoints.php';
-require_once 'Helper/Utilities.php';
 
 class Auth{
     const LIMIT = 10;

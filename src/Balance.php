@@ -3,16 +3,11 @@
  * Okra methods for the Balance Product
  * This  allows you to retrieve the real-time balance for each of a record's accounts. 
  */
+namespace App;
 
-namespace OKRA_PHP_WRAPPER\src;
-
+use App\Helper\UseGuzzle;
+use App\Helper\Utilities;
 use InvalidArgumentException;
-use OKRA_PHP_WRAPPER\src\Helper\UseGuzzle;
-use OKRA_PHP_WRAPPER\src\Helper\Utilities;
-
-require_once 'Helper/UseGuzzle.php';
-require_once 'endpoints.php';
-require_once 'Helper/Utilities.php';
 
 class Auth{
     const LIMIT = 10;

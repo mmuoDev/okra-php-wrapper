@@ -1,7 +1,7 @@
 <?php
 //helper methods
 
-namespace OKRA_PHP_WRAPPER\src\Helper;
+namespace App\Helper;
 
 use DateTime;
 

@@ -1,10 +1,9 @@
 <?php
-namespace OKRA_PHP_WRAPPER\src\Helper;
+namespace App\Helper;
 
 use Exception;
 use GuzzleHttp\Client;
 
-require __DIR__ . '../../../vendor/autoload.php';
 
 class UseGuzzle{
     

@@ -4,15 +4,11 @@
  * This allows developers to receive customer-authorized transaction 
  * data for current, savings, and domiciliary Accounts.
  */
-namespace OKRA_PHP_WRAPPER\src;
+namespace App;
 
+use App\Helper\UseGuzzle;
+use App\Helper\Utilities;
 use InvalidArgumentException;
-use OKRA_PHP_WRAPPER\src\Helper\UseGuzzle;
-use OKRA_PHP_WRAPPER\src\Helper\Utilities;
-
-require_once 'Helper/UseGuzzle.php';
-require_once 'endpoints.php';
-require_once 'Helper/Utilities.php';
 
 class Transaction{
     const LIMIT = 10;
