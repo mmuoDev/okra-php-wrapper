@@ -6,20 +6,10 @@
  */
 namespace App;
 
-use App\Helper\UseGuzzle;
 use App\Helper\Utilities;
 use InvalidArgumentException;
 
-class Transaction{
-    const LIMIT = 10;
-
-    public $guzzle;
-    
-    public function __construct($bearer_token)
-    {
-        $this->bearer_token = $bearer_token;
-        $this->guzzle = new UseGuzzle($this->bearer_token);
-    }
+trait Transaction{
 
     //Returns a summarized info on the transactions  in an array or pdf format.
     public function getTransactions(bool $pdf = false){

@@ -1,5 +1,5 @@
 <?php
-namespace OKRA_PHP_WRAPPER\src\Exceptions;
+namespace App\Exceptions;
 
 class Exception extends \Exception{
     

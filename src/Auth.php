@@ -8,20 +8,10 @@
 
 namespace App;
 
-use App\Helper\UseGuzzle;
 use App\Helper\Utilities;
 use InvalidArgumentException;
 
-class Auth{
-    const LIMIT = 10;
-
-    public $guzzle;
-    
-    public function __construct($bearer_token)
-    {
-        $this->bearer_token = $bearer_token;
-        $this->guzzle = new UseGuzzle($this->bearer_token);
-    }
+trait Auth{
 
      //returns auth information in an array or pdf format for all customers. 
      public function getAllAuth(bool $pdf = false): array {

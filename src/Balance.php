@@ -5,20 +5,10 @@
  */
 namespace App;
 
-use App\Helper\UseGuzzle;
 use App\Helper\Utilities;
 use InvalidArgumentException;
 
-class Auth{
-    const LIMIT = 10;
-
-    public $guzzle;
-    
-    public function __construct($bearer_token)
-    {
-        $this->bearer_token = $bearer_token;
-        $this->guzzle = new UseGuzzle($this->bearer_token);
-    }
+trait Balance{
 
     //returns balance information in an array or pdf format for all customers. 
     public function getAllBalance(bool $pdf = false): array {

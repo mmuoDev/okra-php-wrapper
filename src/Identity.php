@@ -6,23 +6,13 @@
  */
 namespace App;
 
-use App\Helper\UseGuzzle;
 use App\Helper\Utilities;
 use InvalidArgumentException;
 
 require_once 'constants.php';
 
 
-class Identity{
-    const LIMIT = 10;
-
-    public $guzzle;
-    
-    public function __construct($bearer_token)
-    {
-        $this->bearer_token = $bearer_token;
-        $this->guzzle = new UseGuzzle($this->bearer_token);
-    }
+trait Identity  {
 
     //returns identities' information in an array or pdf format for all customers. 
     public function getIdentities(bool $pdf = false): array {
